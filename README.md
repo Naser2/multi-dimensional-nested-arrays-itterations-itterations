@@ -159,29 +159,21 @@ Multidimensional arrays, like the deeply nested one above, are useful for storin
 
 Let's take, for example, a music library. There are artists (top level) who created albums (second level) that contain songs (third level). You can visualize the structure like this:
 
-Structure of Data
-
-And so on, for the various artists in the library. This data structure is considered hierarchical. To illustrate, let's add a second artist and recreate our two-act library as a nested array:
-
-music_library = [["Adele", ["19", ["Day Dreamer", "Best for Last"]], ["21", ["Rolling in the Deep", "Rumor Has It"]]], ["Beyonce", ["4", ["1 + 1", "Countdown"]], ["Beyonce", ["Haunted", "Pretty Hurts"]]]]
-When working with multidimensional arrays, it can be difficult to read through the data structure in a way that makes sense. A useful tactic is to format the array such that each nested level is placed on its own line. This can make complex structures much easier to read:
-
-music_library = [
-  ["Adele",
-    ["19",
-      ["Day Dreamer", "Best for Last"]
-    ],
-    ["21",
-      ["Rolling in the Deep", "Rumor Has It"]
-    ]
-  ],
-  ["Beyonce",
-    ["4",
-      ["1 + 1", "Countdown"]
-    ],
-    ["Beyonce",
-      ["Haunted", "Pretty Hurts"]
-    ]
-  ]
-]
-Let's try iterating over our music_library array.
+                       music_library = [
+                        ["Adele",
+                          ["19",
+                            ["Day Dreamer", "Best for Last"]
+                          ],
+                          ["21",
+                            ["Rolling in the Deep", "Rumor Has It"]
+                          ]
+                        ],
+                        ["Beyonce",
+                          ["4",
+                            ["1 + 1", "Countdown"]
+                          ],
+                          ["Beyonce",
+                            ["Haunted", "Pretty Hurts"]
+                          ]
+                        ]
+                      ]

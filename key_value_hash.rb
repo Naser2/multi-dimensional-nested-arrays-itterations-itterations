@@ -26,7 +26,7 @@ def monopoly_with_third_tier
 # monopoly_with_third_tier.values[0][:rent_in_dollars].values[0]).to eq(25)
   monopoly[:railroads][:rent_in_dollars][:two] =  '50'.to_i
   monopoly
-  # Witouth Operator 
+  # Witouth Operator
   monopoly = {
     railroads: {
       pieces: 4,
